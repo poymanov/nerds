@@ -2,7 +2,10 @@
 <html>
 <head>
   <title>Nёrds</title>
-  <meta charset="utf-8">  
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">  
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
@@ -10,44 +13,44 @@
       <img src="img/logo.svg" width="160" height="65" alt="Студия Нердс" title="Студия Nёrds">  
     </a>      
     <nav class="main-navigation">
-      <ul class="main-navigation-list">
-        <li class="main-navigation-item">
-          <a class="main-navigation-link" href="#">Студия</a>
+      <ul>
+        <li>
+          <a href="#">Студия</a>
         </li>
-        <li class="main-navigation-item">
-          <a class="main-navigation-link" href="#">Клиенты</a>
+        <li>
+          <a href="#">Клиенты</a>
         </li>       
-        <li class="main-navigation-item">
-          <a class="main-navigation-link" href="catalog.html">Магазин</a>
+        <li>
+          <a href="catalog.html">Магазин</a>
         </li>       
-        <li class="main-navigation-item">
-          <a class="main-navigation-link" href="#">Контакты</a>
+        <li>
+          <a href="#">Контакты</a>
         </li>               
       </ul>
     </nav>
-    <ul class="user">
-      <li class="user-item">
-        <a href="#" class="user-link">Корзина</a>
+    <ul class="user-navigation">
+      <li>
+        <a href="#">Корзина</a>
       </li>
     </ul>
   </header>
   <main>
     <h1 class="visually-hidden">Студия Nёrds</h1>
-    <section class="slider-container">
+    <section class="slider">
       <div class="slide">
-        <div class="slide-header">Долго, дорого, скрупулезно</div>
+        <p class="slide-header">Долго, дорого, скрупулезно</p>
         <p class="slide-description">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <a class="slide-link" href="#">Узнать больше</a>
+        <a class="slide-link button button-slider" href="#">Узнать больше</a>
       </div>
       <div class="slide">
-        <div class="slide-header">Долго, дорого, скрупулезно</div>
-        <p class="slide-description">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <a class="slide-link" href="#">Узнать больше</a>
+        <p class="slide-header">Любим математику как никто другой</p>
+        <p class="slide-description">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+        <a class="slide-link button button-slider" href="#">Узнать больше</a>
       </div>
       <div class="slide">
-        <div class="slide-header">Долго, дорого, скрупулезно</div>
-        <p class="slide-description">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <a class="slide-link" href="#">Узнать больше</a>
+        <p class="slide-header">Только ночь, только хардкор</p>
+        <p class="slide-description">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается</p>
+        <a class="slide-link button button-slider" href="#">Узнать больше</a>
       </div>
       <ul class="slider-controls">
         <li class="slider-controls-item slider-controls-item-active"></li>
@@ -66,7 +69,7 @@
           <p class="features-description">
             Мир никогда не будет прежним после того как увидит ваш сайт!
           </p>    
-          <a href="#" class="features-link">Заказать</a>
+          <a href="#" class="features-link button button-features">Заказать</a>
         </li>
         <li class="feature">
           <div class="features-image">
@@ -76,7 +79,7 @@
           <p class="features-description">
             Покорите топ-10 приложений в AppStrore и Google Play
           </p>    
-          <a href="#" class="features-link">Заказать</a>
+          <a href="#" class="features-link button button-features button-features-green">Заказать</a>
         </li>    
         <li class="feature">
           <div class="features-image">
@@ -86,7 +89,7 @@
           <p class="features-description">
             Вы даже не подозреваете, насколько вы изумительны!
           </p>    
-          <a href="#" class="features-link">Заказать</a>
+          <a href="#" class="features-link button button-features button-features-yellow">Заказать</a>
         </li>
       </ul>
     </section>
@@ -163,20 +166,20 @@
         <p>Nёrds Design Studio</p>
         <p>350000, Краснодар, ул. Головатого, 100</p>
         <p>тел. +7 (861) 275-75-75</p>
-        <a href="#">Напишите нам</a>
+        <a href="#" class="button button-feedback">Напишите нам</a>
       </div>
     </section>
     <section class="footer-bottom">
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="social-list">
         <li class="social-item">
-          <a class="social-link social-link-vk">vk</a>
+          <a href="#" class="social-link social-link-vk">vk</a>
         </li>
         <li class="social-item">
-          <a class="social-link social-link-fb">fb</a>
+          <a href="#" class="social-link social-link-fb">fb</a>
         </li>       
         <li class="social-item">
-          <a class="social-link social-link-inst">instagramm</a>
+          <a href="#" class="social-link social-link-inst">instagram</a>
         </li>       
       </ul>
       <div class="footer-description">

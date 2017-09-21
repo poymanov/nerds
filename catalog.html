@@ -3,31 +3,34 @@
 <head>
   <title>Nёrds - Каталог</title>
   <meta charset="utf-8">  
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">  
+  <link rel="stylesheet" href="css/style.css">  
 </head>
 <body>
   <header class="main-header">
-    <a href="index.html" class="logo">
-     <img src="img/logo.svg" width="160" height="65" alt="Студия Нердс" title="Студия Nёrds">  
+    <a href="#" class="logo">
+      <img src="img/logo.svg" width="160" height="65" alt="Студия Нердс" title="Студия Nёrds">  
     </a>      
     <nav class="main-navigation">
-      <ul class="main-navigation-list">
-        <li class="main-navigation-item">
-          <a class="main-navigation-link" href="#">Студия</a>
+      <ul>
+        <li>
+          <a href="#">Студия</a>
         </li>
-        <li class="main-navigation-item">
-          <a class="main-navigation-link" href="#">Клиенты</a>
+        <li>
+          <a href="#">Клиенты</a>
         </li>       
-        <li class="main-navigation-item">
-          <a class="main-navigation-link" href="#">Магазин</a>
+        <li class="main-navigation-active">
+          <a href="catalog.html">Магазин</a>
         </li>       
-        <li class="main-navigation-item">
-          <a class="main-navigation-link" href="#">Контакты</a>
+        <li>
+          <a href="#">Контакты</a>
         </li>               
       </ul>
     </nav>
-    <ul class="user">
-      <li class="user-item">
-        <a href="#" class="user-link">Корзина</a>
+    <ul class="user-navigation">
+      <li>
+        <a href="#">Корзина</a>
       </li>
     </ul>
   </header>
@@ -48,7 +51,7 @@
         <fieldset>
           <legend>Сетка:</legend>
           <p>
-            <input class="visually-hidden" id="adaptive-grid" type="radio" name="grid" value="adaptive">
+            <input class="visually-hidden" id="adaptive-grid" type="radio" name="grid" value="adaptive" checked>
             <label for="adaptive-grid">Адаптивная</label>
           </p>
           <p>
@@ -63,7 +66,7 @@
         <fieldset>
           <legend>Особенности:</legend>
           <p>
-            <input class="visually-hidden" id="features-slider" type="checkbox" name="features[]" value="slider">
+            <input class="visually-hidden" id="features-slider" type="checkbox" name="features[]" value="slider" checked>
             <label for="features-slider">Слайдер</label>
           </p>
           <p>
@@ -71,7 +74,7 @@
             <label for="features-features">Блок преимуществ</label>
           </p>          
           <p>
-            <input class="visually-hidden" id="features-news" type="checkbox" name="features[]" value="news">
+            <input class="visually-hidden" id="features-news" type="checkbox" name="features[]" value="news" checked>
             <label for="features-news">Новости</label>
           </p>
           <p>
@@ -83,21 +86,21 @@
             <label for="features-cart">Галерея</label>
           </p>                    
         </fieldset>
-        <button type="submit">Показать</button>
+        <button type="submit" class="button button-submit">Показать</button>
       </form>
     </section>
     <section class="sort">
       <h2 class="visually-hidden">Сортировка</h2>
-      <p>Сортировать:</p>
+      <p class="sort-title">Сортировать:</p>
       <ul class="sort-type">
-        <li class="sort-type-item">
-          <a href="#" class="sort-type-link">По цене</a>
+        <li class="sort-type-active">
+          <a href="#">По цене</a>
         </li>
-        <li class="sort-item">
-          <a href="#" class="sort-type-link">По типу</a>
+        <li>
+          <a href="#">По типу</a>
         </li>        
-        <li class="sort-item">
-          <a href="#" class="sort-type-link">По названию</a>
+        <li>
+          <a href="#">По названию</a>
         </li>        
       </ul>
       <ul class="sort-direction">
@@ -116,61 +119,63 @@
           <img src="img/product1.jpg" width="360" height="576" alt="Sedona" title="Sedona">
           <div class="catalog-item-info">
             <h3>Sedona</h3>
-            <p>Информационный сайт для туристов</p>
-            <a href="#">9 900 руб.</a>
+            <p class="catalog-item-description">Информационный сайт для туристов</p>
+            <a href="#" class="button button-catalog">9 900 руб.</a>
           </div>        
         </li>
         <li class="catalog-item">
           <img src="img/product2.jpg" width="360" height="576" alt="Pink App" title="Pink App">
           <div class="catalog-item-info">
             <h3>Pink App</h3>
-            <p>Продуктовый лендинг приложения для iOS и Android</p>
-            <a href="#">9 900 руб.</a>
+            <p class="catalog-item-description">Продуктовый лендинг приложения для iOS и Android</p>
+            <a href="#" class="button button-catalog">9 900 руб.</a>
           </div>        
         </li>
         <li class="catalog-item">
           <img src="img/product3.jpg" width="360" height="576" alt="Barbershop" title="Barbershop">
           <div class="catalog-item-info">
             <h3>Barbershop</h3>
-            <p>Сайт салоны красоты. Для мужчин, да.</p>
-            <a href="#">9 900 руб.</a>
+            <p class="catalog-item-description">Сайт салоны красоты. Для мужчин, да.</p>
+            <a href="#" class="button button-catalog">9 900 руб.</a>
           </div>        
         </li>
         <li class="catalog-item">
           <img src="img/product4.jpg" width="360" height="576" alt="Mishka" title="Mishka">
           <div class="catalog-item-info">
             <h3>Mishka</h3>
-            <p>Интернет-магазин вязаных игрушек</p>
-            <a href="#">9 900 руб.</a>
+            <p class="catalog-item-description">Интернет-магазин вязаных игрушек</p>
+            <a href="#" class="button button-catalog">9 900 руб.</a>
           </div>        
         </li>
         <li class="catalog-item">
           <img src="img/product5.jpg" width="360" height="576" alt="A plus" title="A plus">
           <div class="catalog-item-info">
             <h3>A plus</h3>
-            <p>Лендинг курсов повышения квалификации</p>
-            <a href="#">9 900 руб.</a>
+            <p class="catalog-item-description">Лендинг курсов повышения квалификации</p>
+            <a href="#" class="button button-catalog">9 900 руб.</a>
           </div>        
         </li>  
         <li class="catalog-item">
           <img src="img/product6.jpg" width="360" height="576" alt="Кваст" title="Кваст">
           <div class="catalog-item-info">
             <h3>Кваст</h3>
-            <p>Промо-сайт производителя крафтового кваса</p>
-            <a href="#">9 900 руб.</a>
+            <p class="catalog-item-description">Промо-сайт производителя крафтового кваса</p>
+            <a href="#" class="button button-catalog">9 900 руб.</a>
           </div>        
         </li>    
       </ul>
       <ul class="pagination-list">
-        <li class="pagination-item pagination-item-active">1</li>
-        <li class="pagination-item">
-          <a href="#" class="pagination-link">2</a>
+        <li class="pagination-item-active">
+          <a href="#">1</a>
+        </li>
+        <li>
+          <a href="#">2</a>
         </li>
         <li class="pagination-item">
-          <a href="#" class="pagination-link">3</a>
+          <a href="#">3</a>
         </li> 
-        <li class="pagination-item">
-          <a href="#" class="pagination-link">Следующая</a>
+        <li>
+          <a href="#">Следующая</a>
         </li>                
       </ul>                              
     </section>
@@ -182,20 +187,20 @@
         <p>Nёrds Design Studio</p>
         <p>350000, Краснодар, ул. Головатого, 100</p>
         <p>тел. +7 (861) 275-75-75</p>
-        <a href="#">Напишите нам</a>
+        <a href="#" class="button button-feedback">Напишите нам</a>
       </div>
     </section>
     <section class="footer-bottom">
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="social-list">
         <li class="social-item">
-          <a class="social-link social-link-vk">vk</a>
+          <a href="#" class="social-link social-link-vk">vk</a>
         </li>
         <li class="social-item">
-          <a class="social-link social-link-fb">fb</a>
+          <a href="#" class="social-link social-link-fb">fb</a>
         </li>       
         <li class="social-item">
-          <a class="social-link social-link-inst">instagramm</a>
+          <a href="#" class="social-link social-link-inst">instagramm</a>
         </li>       
       </ul>
       <div class="footer-description">
