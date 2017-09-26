@@ -86,8 +86,21 @@ body {
 	width: 219px;
 }
 
+.container {
+	width: 1100px;
+	margin: 0 auto;
+}
+
 .main-header {
 	background-color: #eeeeee;
+}
+
+.main-header .container {
+	display: flex;
+}
+
+.logo {
+	margin-right: 200px;
 }
 
 .main-navigation ul,
@@ -95,6 +108,10 @@ body {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+}
+
+.user-navigation {
+	margin-left: auto;
 }
 
 .main-navigation a,
@@ -120,6 +137,10 @@ body {
 	border-bottom: 2px solid #fb565a;
 } 
 
+.slider {
+	background-color: #eeeeee;
+}
+
 .slide-header {
 	font-weight: 500;
 	line-height: 55px;
@@ -131,6 +152,30 @@ body {
 	line-height: 30px;
 	text-transform: uppercase;
 	font-size: 24px;
+}
+
+.features-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+.feature {
+	width: 300px;
+}
+
+.description .container {
+	display: flex;
+}
+
+.projects-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
 }
 
 .page-title h1 {
@@ -240,4 +285,15 @@ body {
 	border: 3px solid #dbdbdb;
 	min-width: 44px;
 	background-color: #fff;
+}
+
+.footer-bottom .container {
+	display: flex;
+}
+
+.social-list {
+	margin: 0;
+	margin-right: 140px;
+	padding: 0;
+	list-style-type: none;	
 }
