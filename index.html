@@ -4,15 +4,15 @@
   <title>Nёrds</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
     <div class="container">
       <a class="logo">
-        <img src="img/logo.svg" width="160" height="65" alt="Студия Нердс" title="Студия Nёrds">  
-      </a>      
+        <img src="img/logo.svg" width="160" height="65" alt="Студия Нердс" title="Студия Nёrds">
+      </a>
       <nav class="main-navigation">
         <ul>
           <li>
@@ -20,47 +20,53 @@
           </li>
           <li>
             <a href="#">Клиенты</a>
-          </li>       
+          </li>
           <li>
             <a href="catalog.html">Магазин</a>
-          </li>       
+          </li>
           <li>
             <a href="#">Контакты</a>
-          </li>               
+          </li>
         </ul>
       </nav>
       <ul class="user-navigation">
         <li>
-          <a href="#">Корзина</a>
+          <a href="#" class="user-navigation-cart">Корзина</a>
         </li>
       </ul>
-    </div>    
+    </div>
   </header>
   <main>
     <h1 class="visually-hidden">Студия Nёrds</h1>
     <section class="slider">
       <div class="container">
-        <div class="slide">
-          <p class="slide-header">Долго, дорого, скрупулезно</p>
-          <p class="slide-description">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a class="slide-link button button-slider" href="#">Узнать больше</a>
+        <div class="slide slide1">
+          <div class="slider-content">
+            <p class="slide-header">Долго, дорого, скрупулезно.</p>
+            <p class="slide-description">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+            <a class="slide-link button button-slider" href="#">Узнать больше</a>
+          </div>
         </div>
-        <div class="slide">
-          <p class="slide-header">Любим математику как никто другой</p>
-          <p class="slide-description">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-          <a class="slide-link button button-slider" href="#">Узнать больше</a>
+        <div class="slide slide2">
+          <div class="slider-content">
+            <p class="slide-header">Любим математику как никто другой</p>
+            <p class="slide-description">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
+            <a class="slide-link button button-slider" href="#">Узнать больше</a>
+          </div>
         </div>
-        <div class="slide">
-          <p class="slide-header">Только ночь, только хардкор</p>
-          <p class="slide-description">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается</p>
-          <a class="slide-link button button-slider" href="#">Узнать больше</a>
+        <div class="slide slide3">
+          <div class="slider-content">
+            <p class="slide-header">Только ночь, только хардкор</p>
+            <p class="slide-description">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается</p>
+            <a class="slide-link button button-slider" href="#">Узнать больше</a>
+          </div>
         </div>
-        <ul class="slider-controls">
-          <li class="slider-controls-item slider-controls-item-active"></li>
-          <li class="slider-controls-item"></li>
-          <li class="slider-controls-item"></li>
-        </ul>        
-      </div>  
+      </div>
+       <div class="slider-controls">
+          <i class="active"></i>
+          <i></i>
+          <i></i>
+        </div>
     </section>
     <section class="features">
       <h2 class="visually-hidden">Преимущества</h2>
@@ -70,33 +76,33 @@
             <div class="features-image">
               <img src="img/feature1.jpg" width="300" height="146" alt="Нёрдс создает веб-сайты" title="Нёрдс создает веб-сайты">
             </div>
-            <h3 class="features-header">Веб-сайты</h3>  
+            <h3 class="features-header">Веб-сайты</h3>
             <p class="features-description">
               Мир никогда не будет прежним после того как увидит ваш сайт!
-            </p>    
+            </p>
             <a href="#" class="features-link button button-features">Заказать</a>
           </li>
           <li class="feature">
             <div class="features-image">
               <img src="img/feature2.jpg" width="300" height="146" alt="Нёрдс создает приложения" title="Нёрдс создает приложения">
             </div>
-            <h3 class="features-header">Приложения</h3> 
+            <h3 class="features-header">Приложения</h3>
             <p class="features-description">
               Покорите топ-10 приложений в AppStrore и Google Play
-            </p>    
+            </p>
             <a href="#" class="features-link button button-features button-features-green">Заказать</a>
-          </li>    
+          </li>
           <li class="feature">
             <div class="features-image">
               <img src="img/feature3.jpg" width="300" height="146" alt="Нёрдс создает презентации" title="Нёрдс создает презентации">
             </div>
-            <h3 class="features-header">Презентации</h3>  
+            <h3 class="features-header">Презентации</h3>
             <p class="features-description">
               Вы даже не подозреваете, насколько вы изумительны!
-            </p>    
+            </p>
             <a href="#" class="features-link button button-features button-features-yellow">Заказать</a>
           </li>
-        </ul>        
+        </ul>
       </div>
     </section>
     <section class="description">
@@ -105,7 +111,7 @@
         <div class="description-info">
           <div class="description-header">
             Мы — маленькая, но гордая дизайн-студия из Краснодара.
-          </div>  
+          </div>
           <div class="description-text">
             Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.
           </div>
@@ -116,7 +122,7 @@
               <li>Мобильных приложений для iOS и Android</li>
               <li>Слайдшоу и видео для корпоративных презентаций</li>
             </ul>
-          </div>    
+          </div>
         </div>
         <div class="description-stats">
           <div class="description-stats-logo">
@@ -136,8 +142,8 @@
               <td>Соблюдение сроков</td>
               <td>Минимальная предоплата</td>
             </tr>
-          </table>  
-        </div>        
+          </table>
+        </div>
       </div>
     </section>
     <section class="projects">
@@ -158,16 +164,16 @@
             <a href="#">
               <img src="img/project3.png" width="185" height="52" alt="Pink" title="Pink">
             </a>
-          </li>               
+          </li>
           <li class="projects-item">
             <a href="#">
               <img src="img/project4.png" width="173" height="84" alt="Mishka" title="Mishka">
             </a>
-          </li>                       
+          </li>
         </ul>
       </div>
-    </section>  
-  </main> 
+    </section>
+  </main>
   <footer>
     <section class="footer-map">
       <h2 class="visually-hidden">Контакты</h2>
@@ -188,15 +194,15 @@
           </li>
           <li class="social-item">
             <a href="#" class="social-link social-link-fb">fb</a>
-          </li>       
+          </li>
           <li class="social-item">
             <a href="#" class="social-link social-link-inst">instagram</a>
-          </li>       
+          </li>
         </ul>
         <div class="footer-description">
           <p>Давайте дружить, это выгодно!</p>
           <p>Скидка 10% для друзей из социальных сетей</p>
-        </div>        
+        </div>
       </div>
     </section>
   </footer>
