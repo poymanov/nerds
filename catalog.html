@@ -45,14 +45,23 @@
         <section class="filter">
           <h2 class="visually-hidden">Фильтр каталога</h2>
           <form>
-            <fieldset>
+            <fieldset class="filter-price">
               <legend>Стоимость:</legend>
-              <p>
-                <label>от <input type="text" name="min-price"></label>
-                <label>до <input type="text" name="max-price"></label>
-              </p>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                </div>
+              </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-grid">
               <legend>Сетка:</legend>
               <p>
                 <input class="visually-hidden" id="adaptive-grid" type="radio" name="grid" value="adaptive" checked>
@@ -67,7 +76,7 @@
                 <label for="elastic-grid">Резиновая</label>
               </p>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-features">
               <legend>Особенности:</legend>
               <p>
                 <input class="visually-hidden" id="features-slider" type="checkbox" name="features[]" value="slider" checked>
