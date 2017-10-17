@@ -81,6 +81,13 @@ input[type="radio"].visually-hidden {
 	width: 260px;
 }
 
+.button-submit-writeus {
+  font: inherit;
+  font-weight: 500;
+  border: 0;
+  width: 260px;
+}
+
 .button-submit:hover {
 	background-color: #dfdfdf;
 }
@@ -269,7 +276,7 @@ input[type="radio"].visually-hidden {
     height: 18px;
     margin-left: -100px;
     text-align: center;
-    z-index: 1000;
+    z-index: 10;
 }
 
 .slider-controls i {
@@ -1011,6 +1018,48 @@ p.footer-description-header {
   box-shadow: 0 20px 40px 0 rgba(0, 1, 1, .75);
 }
 
+.modal-close {
+  position: absolute;
+  top: 76px;
+  right: 89px;
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.modal-close::before,
+.modal-close::after {
+  top: 9px;
+  left: -2px;
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background-color: #fb565a;
+  opacity: .3;
+}
+
+.modal-close:hover::before,
+.modal-close:hover::after {
+  opacity: 1;
+}
+
+.modal-close:focus::before,
+.modal-close:focus::after {
+  opacity: .1;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
 .modal-writeus {
   left: 50%;
   top: 120px;
@@ -1021,6 +1070,8 @@ p.footer-description-header {
   padding-top: 66px;
   padding-left: 100px;
   padding-right: 100px;
+  z-index: 11;
+  display: none;
 }
 
 .modal-writeus p {
@@ -1042,7 +1093,7 @@ p.footer-description-header {
   margin-bottom: 9px;
 }
 
-.modal-writeus input[type="text"] {
+.modal-writeus input {
   box-sizing: border-box;
   font: inherit;
   width: 360px;
@@ -1072,18 +1123,18 @@ p.footer-description-header {
   resize: none;
 }
 
-.modal-writeus input[type="text"].error,
-.modal-writeus textarea.error {
+.modal-writeus input.has-error,
+.modal-writeus textarea.has-error {
   color: #e74246;
   border-color: #e74246;
 }
 
-.modal-writeus input[type="text"]:hover,
+.modal-writeus input:hover,
 .modal-writeus textarea:hover {
   border-color: #b4b9bb;
 }
 
-.modal-writeus input[type="text"]:focus,
+.modal-writeus input:focus,
 .modal-writeus textarea:focus {
   border-color: #000;
   outline: none;
@@ -1096,7 +1147,12 @@ p.footer-description-header {
   margin-bottom: 34px;
 }
 
-.modal-writeus input[type="text"]::-webkit-input-placeholder,
+
+.modal-writeus .comment-field {
+  margin-bottom: 40px;
+}
+
+.modal-writeus input::-webkit-input-placeholder,
 .modal-writeus textarea::-webkit-input-placeholder {
   color: #444444;
   opacity: .5;
