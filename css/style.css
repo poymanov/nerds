@@ -920,6 +920,16 @@ fieldset.filter-features {
 
 .footer-map {
   text-align: center;
+  height: 416px;
+  position: relative;
+}
+
+.footer-map-container {
+  height: 416px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .footer-map .container {
@@ -959,8 +969,8 @@ p.map-info-tel {
 }
 
 .footer-bottom {
-  padding-top: 62px;
-  padding-bottom: 62px;
+  padding-top: 68px;
+  padding-bottom: 68px;
 }
 
 .footer-bottom .container {
