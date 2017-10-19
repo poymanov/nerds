@@ -140,17 +140,23 @@ input[type="radio"].visually-hidden {
 	margin-right: 203px;
 }
 
+.main-navigation {
+  max-width: 500px;
+}
+
 .main-navigation ul,
 .user-navigation {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   margin-top: 7px;
 }
 
 .user-navigation {
 	margin-left: auto;
+  max-width: 200px;
 }
 
 .main-navigation a,
