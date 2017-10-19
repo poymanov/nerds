@@ -205,6 +205,10 @@ input[type="radio"].visually-hidden {
   margin-bottom: 80px;
 }
 
+.slider input {
+  display: none;
+}
+
 .slider .container {
   position: relative;
   height: 100%;
@@ -250,10 +254,6 @@ input[type="radio"].visually-hidden {
   background-position: 403px 12px;
 }
 
-.slide:nth-child(1) {
-  display: block;
-}
-
 .slide-header {
 	font-weight: 500;
 	line-height: 55px;
@@ -279,7 +279,7 @@ input[type="radio"].visually-hidden {
     z-index: 10;
 }
 
-.slider-controls i {
+.slider-controls label {
     display: inline-block;
     width: 18px;
     height: 18px;
@@ -291,7 +291,15 @@ input[type="radio"].visually-hidden {
     position: relative;
 }
 
-.slider-controls .active::before {
+#btn-1:checked ~ .container .slide1,
+#btn-2:checked ~ .container .slide2,
+#btn-3:checked ~ .container .slide3 {
+  display: block;
+}
+
+#btn-1:checked ~ .slider-controls label:nth-child(1)::before,
+#btn-2:checked ~ .slider-controls label:nth-child(2)::before,
+#btn-3:checked ~ .slider-controls label:nth-child(3)::before {
     content: "";
     position: absolute;
     display: block;
