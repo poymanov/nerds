@@ -193,6 +193,7 @@
   </main>
   <footer>
     <section class="footer-map">
+      <div class="footer-map-container" id="map"></div>
       <h2 class="visually-hidden">Контакты</h2>
       <img src="img/map.jpg" width="1440" height="416" alt="Адрес студии Nёrds" title="Адрес студии Nёrds">
       <div class="container">
@@ -246,5 +247,28 @@
       </div>
     </section>
   </footer>
+  <section class="modal modal-writeus">
+    <button class="modal-close" type="button">Закрыть</button>
+    <h2>Напишите нам</h2>
+    <form action="">
+      <div class="fields-wrapper">
+        <p>
+          <label for="name">Ваше имя:</label>
+          <input id="name" name="name" type="text" placeholder="Представтесь, пожалуйста">
+        </p>
+        <p>
+          <label for="email">Ваш e-mail:</label>
+          <input id="email" name="email" type="text" placeholder="Для отправки ответа">
+        </p>
+      </div>
+      <p class="comment-field">
+        <label for="comment">Текст письма:</label>
+        <textarea name="comment" id="comment" placeholder="В свободной форме"></textarea>
+      </p>
+      <button type="submit" class="button button-submit-writeus">Отправить</button>
+    </form>
+  </section>
+  <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
