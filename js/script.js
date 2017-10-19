@@ -89,21 +89,14 @@ window.addEventListener("keydown", function (evt) {
 // Интерактивная карта от Яндекс
 ymaps.ready(function () {
   var myMap = new ymaps.Map('map', {
-      center: [59.93864721453575, 30.3230545],
+      center: [59.93902323, 30.32142180],
       zoom: 17
   }),
-  myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-      hintContent: 'Собственный значок метки',
-      balloonContent: 'Это красивая метка'
-  }, {
-      // Опции.
-      // Необходимо указать данный тип макета.
+  myPlacemark = new ymaps.Placemark(myMap.getCenter(), {}, {
       iconLayout: 'default#image',
-      // Своё изображение иконки метки.
       iconImageHref: 'img/map-marker.png',
-      // Размеры метки.
       iconImageSize: [231, 190],
-      iconImageOffset: [-50, -200]
+      iconImageOffset: [105, -120]
   });
 
   myMap.geoObjects.add(myPlacemark)
