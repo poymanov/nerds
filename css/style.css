@@ -920,6 +920,11 @@ fieldset.filter-features {
   margin-bottom: 15px;
 }
 
+.catalog-item-info .catalog-item-link {
+  text-decoration: none;
+  color: #000;
+}
+
 .catalog-item-description {
   line-height: 18px;
   color: #666;
@@ -927,6 +932,7 @@ fieldset.filter-features {
   max-height: 54px;
   margin: 0 auto;
   margin-bottom: 31px;
+  overflow: auto;
 }
 
 .pagination-list {
